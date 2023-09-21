@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Веб-сайт</title>
+    <meta name="author" content="Копалина Майя Алексеевна" />
+    <meta
+      name="description"
+      content="Веб-программирование: Лабораторная работа №1"
+    />
+    <meta
+      name="keywords"
+      content="ITMO, ИТМО, ПИиКТ, ВТ, Лабораторная работа, Веб-программирование"
+    />
+
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Иконка страницы -->
+    <link rel="icon" href="assets/img/itmoLogo.png" />
+  </head>
+
+  <body>
+    <!-- Шапка страницы -->
+    <header class="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <h3 class="header-title">
+            ФИО: <br />
+            Копалина Майя
+          </h3>
+          <p class="header-title">
+            Группа: <br />
+            P3232
+          </p>
+          <p class="header-title">
+            Вариант: <br />
+            1307
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <section class="laboratory-info">
+      <div class="container">
+        <div class="lab" field="tn_text_1686666372970">
+          <h2 class="lab-title">Лабораторная работа №1</h2>
+
+          <!-- Картинка овала -->
+          <svg
+            viewBox="0 0 483 97.00048828125"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M104.93675 13.88425C150.58225 3.7466 213.7385 4.266475
+               258.42 4.825475C305.17 5.410375 534.575 14.387525 455.835 
+               72.26325C436.5575 86.43175 398.8725 86.8565 381.075 89.27175C332.6225 
+               95.8465 281.6325 97.7915 232.83625 94.27C198.58975 91.7985 77.5495 
+               96.92325 22.7751 72.26325C7.458125 66.44325 -2.0902575 54.1605 1.914275 
+               38.26575C6.466225 20.19805 52.94675 12.40245 69.65825 9.63865C126.5325 0.23261075 187.3275 0.99223 245.0715 1.4595025C310.8975 1.99218 346.575 -2.555375 411.2375 8.851725C421.8975 10.732075 481.3675 20.504575 481.9875 44.08025C482.8775 77.8545 433.8325 83.0505 407.3475 86.43175C351.7775 93.526 295.9075 91.43 239.791 91.43C206.77175 91.43 174.031 87.57175 141.0085 87.3405C115.384 87.161 89.57925 88.27725 63.9915 86.886C51.3235 86.19725 19.0952 81.59975 8.510075 72.26325C-3.6173 61.56625 8.510075 39.551 21.634025 29.48575C72.4145 -4.233125 170.18425 4.825475 232.83625 4.825475"
+              stroke="#009F9E"
+              stroke-width="2"
+              stroke-linecap="round"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="fiends-and-graph">
+      <div class="fields">
+        <div class="container">
+          <form class="fields-form" action="./script.php" method="GET">
+            <div class="form-wrapper">
+              <p class="fields-label">Выберите значение X</p>
+              <select id="select" name="x">
+                <option value="-3">-3</option>
+                <option value="%2D2">-2</option>
+                <option value="-1">-1</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+
+            <label class="fileds-y _req">
+              <span class="fields-label">Введите значение Y</span>
+              <input
+                name="y"
+                type="text"
+                id="input-y"
+                class="fields-input"
+                placeholder="(от -5 до 3)"
+              />
+            </label>
+
+            <label class="fields-r _req">
+              <span class="fields-label">Выберите значение R</span>
+              <div class="fields-radios _req">
+                <div class="custom-wrapper">
+                  <input
+                    class="custom-radio"
+                    name="radio"
+                    type="radio"
+                    id="radio-2"
+                    value="2"
+                  />
+                  <label for="radio-2">2</label>
+                </div>
+                <div class="custom-wrapper">
+                  <input
+                    class="custom-radio"
+                    name="radio"
+                    type="radio"
+                    id="radio-3"
+                    value="3"
+                  />
+                  <label for="radio-3">3</label>
+                </div>
+                <div class="custom-wrapper">
+                  <input
+                    class="custom-radio"
+                    name="radio"
+                    type="radio"
+                    id="radio-4"
+                    value="4"
+                  />
+                  <label for="radio-4">4</label>
+                </div>
+                <div class="custom-wrapper">
+                  <input
+                    class="custom-radio"
+                    name="radio"
+                    type="radio"
+                    id="radio-5"
+                    value="5"
+                  />
+                  <label for="radio-5">5</label>
+                </div>
+              </div>
+            </label>
+
+            <div class="btn">
+              <div class="btn-send">
+                <button id="send-button" type="submit">Send</button>
+              </div>
+              <div class="btn-clear">
+                <input type="reset" value="Clear" id="clear-button" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="graph">
+        <img src="assets/img/goodArea.png" alt="График" />
+      </div>
+    </section>
+
+    <section class="table">
+      <table id="outputContainer">
+        <!-- Этот div будет содержать таблицу -->
+        <!-- Нет результатов -->
+        <h4>
+          <span class="outputStub notification">Нет результатов</span>
+        </h4>
+      </table>
+    </section>
+    <script type="module" src="index.js"></script>
+  </body>
+  <!-- <section class="table">
+      <table id="outputContainer">
+        <h4>
+          <span class="outputStub notification">Нет результатов</span>
+        </h4>
+      </table>
+    </section>
+    <script type="module" src="index.js"></script>
+  </body> -->
+</html>
